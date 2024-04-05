@@ -14,7 +14,7 @@ const childVariants = {
     hidden: { scale: 0.9, opacity: 0 },
     visible:{opacity:1, scale:1}
 }
-const Benifit = ({key,title,icon,description,setSelectedPage}:Props) => {
+const Benifit = ({title,icon,description,setSelectedPage}:Props) => {
     return (
         <motion.div
             variants={childVariants}

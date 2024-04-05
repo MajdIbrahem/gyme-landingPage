@@ -29,7 +29,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
                                 <Link page='Contact us' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                             </div>
                             <div className='flex items-center justify-between gap-8'>
-                                <p>Sign In</p>
+                                
                                 <button
                                     className='rounded-md py-2 bg-secondary-400 px-10 hover:bg-primary-500'
                                     onClick={() => { setSelectedPage("contactus") }}>Become a Member</button>

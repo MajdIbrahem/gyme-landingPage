@@ -64,13 +64,22 @@ return (
             })}
         </motion.div>
         <div className='flex items-center justify-center gap-16 flex-col md:flex-row w-5/6 relative'>
-            <div className='w-2/4 relative p-2 '>
+            <motion.div
+                initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x: -50 },
+                        visible:{opacity:1,x:0}
+                    }}
+                className='w-2/4 relative p-2 '>
                 <img className="mx-auto"
             alt="benefits-page-graphic"
                     src={BenefitsPageGraphic}></img>
                 <img src={AbstractWaves} alt="AbstractWaves"
                 className='absolute bottom-50 right-2'></img>
-            </div>
+            </motion.div>
             
             <div className='flex justify-center items-center gap-8 flex-col w-2/4 '>
                 < motion.h1
